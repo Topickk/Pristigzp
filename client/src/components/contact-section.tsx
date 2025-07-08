@@ -25,7 +25,7 @@ export function ContactSection() {
               <div>
                 <h3 className="text-xl font-semibold mb-2">Адрес</h3>
                 <p className="text-muted-foreground">
-                  [АДРЕС БУДЕТ ВСТАВЛЕН ИЗ ФАЙЛА контактные_данные.txt]
+                  Республика Хакасия, Ширинский район, озеро Белё
                 </p>
               </div>
             </div>
@@ -35,24 +35,16 @@ export function ContactSection() {
                 <Phone className="text-white" />
               </div>
               <div>
-                <h3 className="text-xl font-semibold mb-2">Телефон</h3>
+                <h3 className="text-xl font-semibold mb-2">Телефоны</h3>
                 <p className="text-muted-foreground">
-                  [ТЕЛЕФОН БУДЕТ ВСТАВЛЕН ИЗ ФАЙЛА контактные_данные.txt]
+                  8950-965-5555<br/>
+                  8902-467-5000<br/>
+                  8902-468-9999
                 </p>
               </div>
             </div>
             
-            <div className="flex items-start space-x-4">
-              <div className="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center flex-shrink-0">
-                <Mail className="text-white" />
-              </div>
-              <div>
-                <h3 className="text-xl font-semibold mb-2">Email</h3>
-                <p className="text-muted-foreground">
-                  [EMAIL БУДЕТ ВСТАВЛЕН ИЗ ФАЙЛА контактные_данные.txt]
-                </p>
-              </div>
-            </div>
+
             
             <div className="flex items-start space-x-4">
               <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center flex-shrink-0">
@@ -61,8 +53,7 @@ export function ContactSection() {
               <div>
                 <h3 className="text-xl font-semibold mb-2">Режим работы</h3>
                 <p className="text-muted-foreground">
-                  Круглосуточно<br />
-                  Прием гостей: 14:00 - 23:00
+                  Телефоны работают с 9:00 до 21:00
                 </p>
               </div>
             </div>

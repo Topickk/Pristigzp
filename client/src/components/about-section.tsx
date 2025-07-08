@@ -1,4 +1,4 @@
-import { Leaf, Home, Users } from 'lucide-react';
+import { Leaf, Home, MapPin } from 'lucide-react';
 
 export function AboutSection() {
   return (
@@ -8,17 +8,18 @@ export function AboutSection() {
           <h2 className="text-4xl font-bold mb-6">О нас</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             База отдыха "ПРЕСТИЖ" – это место, где сочетаются комфорт современной жизни 
-            и красота нетронутой природы
+            и красота нетронутой природы Хакасии
           </p>
         </div>
         
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
-            <img 
-              src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" 
-              alt="Уютный интерьер базы отдыха" 
-              className="rounded-2xl shadow-xl w-full h-auto" 
-            />
+            <div className="rounded-2xl shadow-xl w-full h-80 bg-muted flex items-center justify-center">
+              <p className="text-muted-foreground text-center">
+                [ФОТО ТЕРРИТОРИИ]<br/>
+                <span className="text-sm">Добавьте ссылку в файл фотографии_и_изображения.txt</span>
+              </p>
+            </div>
           </div>
           
           <div className="space-y-6">
@@ -29,7 +30,7 @@ export function AboutSection() {
               <div>
                 <h3 className="text-xl font-semibold mb-2">Экологически чистый район</h3>
                 <p className="text-muted-foreground">
-                  Наша база отдыха расположена в живописном месте, окруженном лесом и озером, 
+                  Наша база отдыха расположена в живописном месте на берегу озера Белё, 
                   вдали от городской суеты и загрязнения.
                 </p>
               </div>
@@ -42,21 +43,19 @@ export function AboutSection() {
               <div>
                 <h3 className="text-xl font-semibold mb-2">Современный комфорт</h3>
                 <p className="text-muted-foreground">
-                  Все номера оборудованы современной мебелью, кондиционерами, 
-                  Wi-Fi и всеми необходимыми удобствами для комфортного проживания.
+                  Все номера оборудованы современными удобствами для комфортного проживания.
                 </p>
               </div>
             </div>
             
             <div className="flex items-start space-x-4">
               <div className="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center flex-shrink-0">
-                <Users className="text-white" />
+                <MapPin className="text-white" />
               </div>
               <div>
-                <h3 className="text-xl font-semibold mb-2">Профессиональный сервис</h3>
+                <h3 className="text-xl font-semibold mb-2">Отличное расположение</h3>
                 <p className="text-muted-foreground">
-                  Наша команда профессионалов готова обеспечить вам незабываемый отдых 
-                  и помочь с любыми вопросами 24/7.
+                  Прямо на берегу красивейшего озера Белё в Республике Хакасия.
                 </p>
               </div>
             </div>

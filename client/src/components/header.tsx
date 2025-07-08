@@ -22,7 +22,7 @@ export function Header() {
             <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center relative">
               {/* Якорь */}
               <svg className="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 2C13.1 2 14 2.9 14 4C14 5.1 13.1 6 12 6C10.9 6 10 5.1 10 4C10 2.9 10.9 2 12 2M21 9V7L15 1L9 7V9H11V14H13V9H21M12 10C8.69 10 6 12.69 6 16C6 19.31 8.69 22 12 22C15.31 22 18 19.31 18 16C18 12.69 15.31 10 12 10M12 12C14.21 12 16 13.79 16 16C16 18.21 14.21 20 12 20C9.79 20 8 18.21 8 16C8 13.79 9.79 12 12 12Z" />
+                <path d="M12 2C10.9 2 10 2.9 10 4C10 5.1 10.9 6 12 6C13.1 6 14 5.1 14 4C14 2.9 13.1 2 12 2M12 7C10.34 7 9 8.34 9 10C9 11.66 10.34 13 12 13C13.66 13 15 11.66 15 10C15 8.34 13.66 7 12 7M12 8.5C12.83 8.5 13.5 9.17 13.5 10C13.5 10.83 12.83 11.5 12 11.5C11.17 11.5 10.5 10.83 10.5 10C10.5 9.17 11.17 8.5 12 8.5M6 14C6 18.41 8.69 22 12 22C15.31 22 18 18.41 18 14H16C16 17.31 14.21 20 12 20C9.79 20 8 17.31 8 14H6M12 13V22" />
               </svg>
             </div>
             <div className="flex flex-col">
@@ -47,12 +47,7 @@ export function Header() {
             >
               О нас
             </button>
-            <button
-              onClick={() => scrollToSection('services')}
-              className="text-muted-foreground hover:text-primary transition-colors"
-            >
-              Услуги
-            </button>
+
             <button
               onClick={() => scrollToSection('gallery')}
               className="text-muted-foreground hover:text-primary transition-colors"
@@ -97,12 +92,7 @@ export function Header() {
               >
                 О нас
               </button>
-              <button
-                onClick={() => scrollToSection('services')}
-                className="text-muted-foreground hover:text-primary transition-colors text-left"
-              >
-                Услуги
-              </button>
+
               <button
                 onClick={() => scrollToSection('gallery')}
                 className="text-muted-foreground hover:text-primary transition-colors text-left"

@@ -27,7 +27,7 @@ export function HeroSection() {
             </h1>
             <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
               Комфортный отдых на природе в экологически чистом районе. 
-              Современные номера, развитая инфраструктура и незабываемые впечатления.
+              Современные номера, развитая инфраструктура и незабываемые впечатления на берегу озера Белё.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Button size="lg" onClick={scrollToContact} className="px-8 py-4">
@@ -40,11 +40,12 @@ export function HeroSection() {
           </div>
           
           <div className="relative">
-            <img 
-              src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" 
-              alt="Современная база отдыха ПРЕСТИЖ" 
-              className="rounded-2xl shadow-2xl w-full h-auto" 
-            />
+            <div className="rounded-2xl shadow-2xl w-full h-96 bg-muted flex items-center justify-center">
+              <p className="text-muted-foreground text-center">
+                [ФОТО БАЗЫ ОТДЫХА]<br/>
+                <span className="text-sm">Добавьте ссылку в файл фотографии_и_изображения.txt</span>
+              </p>
+            </div>
             
             {/* Floating info cards */}
             <div className="absolute -bottom-6 -left-6 bg-card p-4 rounded-xl shadow-xl border">
