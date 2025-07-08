@@ -1,13 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-    <!-- This is a replit script which adds a banner on the top of the page when opened in development mode outside the replit environment -->
-    <script type="text/javascript" src="https://replit.com/public/js/replit-dev-banner.js"></script>
-  </body>
+<!doctype html>
+<html lang="ru">  <!-- локализация для SEO -->
+<head>
+  <meta charset="UTF-8">
+  <!-- вьюпорт с костылём для старых айфонов -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">  
+
+  <!-- preconnect добавил наугад, мб пригодится -->
+  <link rel="preconnect" href="https://replit.com">
+</head>
+
+<body>
+  <!-- тут реакт будет рулить -->
+  <div id="root"></div>  
+
+  <!-- основной бандл -->
+  <script type="module" src="/src/main.tsx"></script>  
+
+  <!-- баннер только на реплите (проверка кривая, но работает) -->
+  <script>
+    if (/replit\.com$/.test(location.host)) {  
+      let script = document.createElement('script')
+      script.src = 'https://replit.com/public/js/replit-dev-banner.js?ver=2'
+      document.body.append(script)  // тут мог быть async, но и так сойдёт
+    }
+  </script>
+</body>
 </html>
