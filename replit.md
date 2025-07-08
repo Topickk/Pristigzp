@@ -128,6 +128,7 @@ This is a full-stack web application for a Russian resort/recreation center call
 ## Changelog
 
 - July 08, 2025. Initial setup
+- July 08, 2025. Изменен логотип на якорь с повязкой, созданы отдельные текстовые файлы для контента, убраны социальные сети и копирайт из футера
 
 ## User Preferences
 

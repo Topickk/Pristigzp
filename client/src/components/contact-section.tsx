@@ -25,7 +25,7 @@ export function ContactSection() {
               <div>
                 <h3 className="text-xl font-semibold mb-2">Адрес</h3>
                 <p className="text-muted-foreground">
-                  [АДРЕС БУДЕТ ВСТАВЛЕН ИЗ ФАЙЛА links_and_content.txt]
+                  [АДРЕС БУДЕТ ВСТАВЛЕН ИЗ ФАЙЛА контактные_данные.txt]
                 </p>
               </div>
             </div>
@@ -37,7 +37,7 @@ export function ContactSection() {
               <div>
                 <h3 className="text-xl font-semibold mb-2">Телефон</h3>
                 <p className="text-muted-foreground">
-                  [ТЕЛЕФОН БУДЕТ ВСТАВЛЕН ИЗ ФАЙЛА links_and_content.txt]
+                  [ТЕЛЕФОН БУДЕТ ВСТАВЛЕН ИЗ ФАЙЛА контактные_данные.txt]
                 </p>
               </div>
             </div>
@@ -49,7 +49,7 @@ export function ContactSection() {
               <div>
                 <h3 className="text-xl font-semibold mb-2">Email</h3>
                 <p className="text-muted-foreground">
-                  [EMAIL БУДЕТ ВСТАВЛЕН ИЗ ФАЙЛА links_and_content.txt]
+                  [EMAIL БУДЕТ ВСТАВЛЕН ИЗ ФАЙЛА контактные_данные.txt]
                 </p>
               </div>
             </div>
