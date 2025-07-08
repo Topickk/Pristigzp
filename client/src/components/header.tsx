@@ -2,16 +2,14 @@ import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { ThemeToggle } from './theme-toggle';
+import { Link, useLocation } from 'wouter';
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [location] = useLocation();
 
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-      setIsMenuOpen(false);
-    }
+  const isActive = (path: string) => {
+    return location === path;
   };
 
   return (
@@ -35,31 +33,38 @@ export function Header() {
           </div>
           
           <div className="hidden md:flex space-x-8">
-            <button
-              onClick={() => scrollToSection('home')}
-              className="text-muted-foreground hover:text-primary transition-colors"
+            <Link
+              href="/"
+              className={`text-sm font-medium hover:text-primary transition-colors ${
+                isActive('/') ? 'text-primary' : 'text-muted-foreground'
+              }`}
             >
               Главная
-            </button>
-            <button
-              onClick={() => scrollToSection('about')}
-              className="text-muted-foreground hover:text-primary transition-colors"
-            >
-              О нас
-            </button>
-
-            <button
-              onClick={() => scrollToSection('gallery')}
-              className="text-muted-foreground hover:text-primary transition-colors"
+            </Link>
+            <Link
+              href="/gallery"
+              className={`text-sm font-medium hover:text-primary transition-colors ${
+                isActive('/gallery') ? 'text-primary' : 'text-muted-foreground'
+              }`}
             >
               Галерея
-            </button>
-            <button
-              onClick={() => scrollToSection('contact')}
-              className="text-muted-foreground hover:text-primary transition-colors"
+            </Link>
+            <Link
+              href="/rules"
+              className={`text-sm font-medium hover:text-primary transition-colors ${
+                isActive('/rules') ? 'text-primary' : 'text-muted-foreground'
+              }`}
             >
-              Контакты
-            </button>
+              Правила
+            </Link>
+            <Link
+              href="/location"
+              className={`text-sm font-medium hover:text-primary transition-colors ${
+                isActive('/location') ? 'text-primary' : 'text-muted-foreground'
+              }`}
+            >
+              Как добраться
+            </Link>
           </div>
           
           <div className="flex items-center space-x-4">
@@ -80,31 +85,42 @@ export function Header() {
         {isMenuOpen && (
           <div className="md:hidden mt-4 animate-in slide-in-from-top-5">
             <div className="flex flex-col space-y-3 py-4">
-              <button
-                onClick={() => scrollToSection('home')}
-                className="text-muted-foreground hover:text-primary transition-colors text-left"
+              <Link
+                href="/"
+                className={`text-sm font-medium hover:text-primary transition-colors text-left ${
+                  isActive('/') ? 'text-primary' : 'text-muted-foreground'
+                }`}
+                onClick={() => setIsMenuOpen(false)}
               >
                 Главная
-              </button>
-              <button
-                onClick={() => scrollToSection('about')}
-                className="text-muted-foreground hover:text-primary transition-colors text-left"
-              >
-                О нас
-              </button>
-
-              <button
-                onClick={() => scrollToSection('gallery')}
-                className="text-muted-foreground hover:text-primary transition-colors text-left"
+              </Link>
+              <Link
+                href="/gallery"
+                className={`text-sm font-medium hover:text-primary transition-colors text-left ${
+                  isActive('/gallery') ? 'text-primary' : 'text-muted-foreground'
+                }`}
+                onClick={() => setIsMenuOpen(false)}
               >
                 Галерея
-              </button>
-              <button
-                onClick={() => scrollToSection('contact')}
-                className="text-muted-foreground hover:text-primary transition-colors text-left"
+              </Link>
+              <Link
+                href="/rules"
+                className={`text-sm font-medium hover:text-primary transition-colors text-left ${
+                  isActive('/rules') ? 'text-primary' : 'text-muted-foreground'
+                }`}
+                onClick={() => setIsMenuOpen(false)}
               >
-                Контакты
-              </button>
+                Правила
+              </Link>
+              <Link
+                href="/location"
+                className={`text-sm font-medium hover:text-primary transition-colors text-left ${
+                  isActive('/location') ? 'text-primary' : 'text-muted-foreground'
+                }`}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Как добраться
+              </Link>
             </div>
           </div>
         )}

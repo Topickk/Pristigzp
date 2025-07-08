@@ -1,13 +1,7 @@
 import React from 'react';
+import { Link } from 'wouter';
 
 export function Footer() {
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   return (
     <footer className="bg-slate-900 text-white py-12">
       <div className="container mx-auto px-4">
@@ -36,51 +30,38 @@ export function Footer() {
             <h4 className="text-lg font-semibold mb-4">Навигация</h4>
             <ul className="space-y-2 text-slate-400">
               <li>
-                <button 
-                  onClick={() => scrollToSection('home')}
-                  className="hover:text-white transition-colors"
-                >
+                <Link href="/" className="hover:text-white transition-colors">
                   Главная
-                </button>
+                </Link>
               </li>
               <li>
-                <button 
-                  onClick={() => scrollToSection('about')}
-                  className="hover:text-white transition-colors"
-                >
-                  О нас
-                </button>
-              </li>
-
-              <li>
-                <button 
-                  onClick={() => scrollToSection('gallery')}
-                  className="hover:text-white transition-colors"
-                >
+                <Link href="/gallery" className="hover:text-white transition-colors">
                   Галерея
-                </button>
+                </Link>
               </li>
               <li>
-                <button 
-                  onClick={() => scrollToSection('contact')}
-                  className="hover:text-white transition-colors"
-                >
-                  Контакты
-                </button>
+                <Link href="/rules" className="hover:text-white transition-colors">
+                  Правила
+                </Link>
+              </li>
+              <li>
+                <Link href="/location" className="hover:text-white transition-colors">
+                  Как добраться
+                </Link>
               </li>
             </ul>
           </div>
           
           <div>
-            <h4 className="text-lg font-semibold mb-4">Информация</h4>
-            <ul className="space-y-2 text-slate-400">
-              <li><span className="hover:text-white transition-colors cursor-pointer">Размещение</span></li>
-              <li><span className="hover:text-white transition-colors cursor-pointer">Правила проживания</span></li>
-              <li><span className="hover:text-white transition-colors cursor-pointer">Схема проезда</span></li>
-            </ul>
+            <h4 className="text-lg font-semibold mb-4">Контакты</h4>
+            <div className="text-slate-400 space-y-2">
+              <p>Республика Хакасия, Ширинский район, озеро Белё</p>
+              <p>8950-965-5555</p>
+              <p>8902-467-5000</p>
+              <p>8902-468-9999</p>
+            </div>
           </div>
         </div>
-
       </div>
     </footer>
   );
