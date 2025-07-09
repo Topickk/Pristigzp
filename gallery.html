@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фотогалерея | База отдыха Престиж</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/images/logo.png" type="image/png">
+</head>
+<body>
+    <button id="themeToggle" class="theme-toggle"><i class="fas fa-moon"></i></button>
+
+    <header class="small-header">
+        <div class="header-overlay"></div>
+        <img src="assets/images/gallery-bg.jpg" alt="Галерея базы отдыха Престиж" class="header-bg">
+        
+        <div class="header-content">
+            <a href="index.html">
+                <img src="assets/images/logo.png" alt="Логотип Престиж" class="logo">
+            </a>
+            <h1>Фотогалерея</h1>
+            <p>Наши лучшие моменты</p>
+        </div>
+    </header>
+
+    <main class="page-content">
+        <section class="section">
+            <div class="gallery-container">
+                <div class="gallery">
+                    <div class="gallery-item" data-caption="Вид на озеро Белё">
+                        <img src="assets/images/gallery1.jpg" alt="Вид на озеро">
+                    </div>
+                    <div class="gallery-item" data-caption="Гостиничный комплекс">
+                        <img src="assets/images/gallery2.jpg" alt="Гостиничный комплекс">
+                    </div>
+                    <div class="gallery-item" data-caption="Номер с видом на озеро">
+                        <img src="assets/images/gallery3.jpg" alt="Номер">
+                    </div>
+                    <div class="gallery-item" data-caption="Банный комплекс">
+                        <img src="assets/images/gallery4.jpg" alt="Баня">
+                    </div>
+                    <div class="gallery-item" data-caption="Пляжная зона">
+                        <img src="assets/images/gallery5.jpg" alt="Пляж">
+                    </div>
+                    <div class="gallery-item" data-caption="Вечерний вид">
+                        <img src="assets/images/gallery6.jpg" alt="Вечер">
+                    </div>
+                </div>
+            </div>
+            
+            <a href="index.html" class="back-link">
+                <i class="fas fa-arrow-left"></i> На главную
+            </a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <img src="assets/images/logo.png" alt="Логотип Престиж" class="footer-logo">
+            
+            <div class="footer-contacts">
+                <h3>Контакты</h3>
+                <p><i class="fas fa-phone"></i> 8950-965-5555</p>
+                <p><i class="fas fa-map-marker-alt"></i> Озеро Белё, Красноярский край</p>
+            </div>
+            
+            <div class="footer-links">
+                <a href="index.html">Главная</a>
+                <a href="location.html">Как добраться</a>
+                <a href="contacts.html">Бронирование</a>
+            </div>
+            
+            <p class="copyright">© База отдыха "Престиж", 2025</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
